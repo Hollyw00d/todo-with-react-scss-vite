@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "buildopen": "npx live-server --open=dist/index.html",
     "format": "prettier --write \"**/*.{ts,tsx,js,json,css,scss,md}\"",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
