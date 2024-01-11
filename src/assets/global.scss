@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+
+:root {
+  --font-family: 'Prosto One', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --black_opacity_color: rgba(0, 0, 0, 0.2);
+  --contrast_color: crimson;
+  --white_color: white;
+  --green_color: rgba(80, 227, 164);
+  //--green_color: #3BB08F;
+}
+
+$base_font_size: 14px;
+$base_margin: 5px 15px;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-family);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.input {
+  height: 35px;
+  width: 335px;
+  border: 1px solid var(--black_opacity_color);
+  font-size: $base_font_size;
+  font-family: var(--font-family);
+  background-color: pink;
+  border-radius: 8px;
+  color: var(--white_color);
+  padding: 5px;
+  margin: 5px;
+}
+
+.button {
+  border: 0;
+  font-family: var(--font-family);
+  font-size: $base_font_size;
+  padding: 10px 20px;
+  border-radius: 8px;
+  &:hover {
+    cursor: pointer;
+  }
+  &:active {
+    background-color: var(--contrast_color);
+    color: var(--white_color);
+  }
+}
