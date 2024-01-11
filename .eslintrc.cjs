@@ -9,19 +9,19 @@ module.exports = {
     'prettier',
     'plugin:prettier/recommended'
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs', 'vite*'],
+  ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
   plugins: ['react-refresh', 'jsx-a11y'],
   rules: {
-    'react-refresh/only-export-components': [
-      'warn',
-      { allowConstantExport: true }
-    ],
     semi: 'error',
-    'commonjs/no-duplicate-exports': 2,
+    'commonjs/no-duplicate-exports': 'off',
     'import/no-extraneous-dependencies': 'off',
     'import/extensions': 'off',
     'import/no-dynamic-require': 'off',
-    'global-require': 'off'
+    'global-require': 'off',
+    'react-refresh/only-export-components': [
+      'warn',
+      { allowConstantExport: true }
+    ]
   }
 };

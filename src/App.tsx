@@ -1,4 +1,4 @@
-import { useState } from 'react'; // eslint-disable-line no-duplicate-exports
+import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './scss/main.scss';
