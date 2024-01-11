@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from 'react'; // eslint-disable-line no-duplicate-exports
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './scss/main.scss';
@@ -29,7 +29,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
