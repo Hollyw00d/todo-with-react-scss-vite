@@ -4,6 +4,7 @@ import { useAppDispatch } from '../../hooks/storeHooks/hooks.ts';
 import { removeTodo, toggleTodoComplete } from '../../store/todosSlice.tsx';
 import cn from 'classnames';
 import style from './Todo.module.scss';
+import '../../scss/main.scss';
 
 const Todo: React.FC<Todo> = ({ id, body, completed }) => {
   const dispatch = useAppDispatch();
