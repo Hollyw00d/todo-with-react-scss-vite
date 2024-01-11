@@ -1,0 +1,50 @@
+.todo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 15px auto;
+}
+
+.remove {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    height: 20px;
+    background-color: var(--contrast_color);
+    color: var(--white_color);
+    border-radius: 50%;
+    transition-duration: 0.5s;
+    &Completed {
+      opacity: 0.3;
+    }
+    &:hover {
+      scale: 1.2;
+    }
+  }
+}
+
+.body {
+  font-size: 18px;
+  overflow: scroll;
+  width: 80%;
+  cursor: pointer;
+}
+
+.body::-webkit-scrollbar {
+  width: 0;
+}
+
+.bodyCompleted {
+  opacity: 0.3;
+  text-decoration: line-through;
+  text-decoration-color: crimson;
+}
