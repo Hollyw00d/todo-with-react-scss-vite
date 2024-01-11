@@ -13,7 +13,7 @@ jobs:
       - name: Login to Docker Hub
         run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
       - name: Build Docker Image
-        run: docker build -t risinghhoenix1979/todo-with-react-scss-vite .
+        run: docker build -t risinghhoenix1979/todo-with-react-scss-vite .  -f Dockerfile
       - name: Publish image to docker hub
         run: docker push risinghhoenix1979/todo-with-react-scss-vite:latest
 
